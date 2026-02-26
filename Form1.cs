@@ -28,7 +28,8 @@ namespace physics_sim_attempt
                 int randX = getRandom.Next(0, this.ClientSize.Width);
                 int randY = getRandom.Next(0, this.ClientSize.Height);
                 int randId = getRandom.Next(0, 1000000);
-                    balls.Add(new Ball(mass, radius, [randV, randV2], [randX, randY], 1,randId));
+                mass = getRandom.Next(0, 50);
+                balls.Add(new Ball(mass, mass, [randV, randV2], [randX, randY], 1,randId));
                 }
         }
 
